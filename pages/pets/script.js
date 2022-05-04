@@ -34,3 +34,5 @@ $links.forEach((e) => {
 });
 
 $curtain.addEventListener("click", hideMenu);
+
+/* Carousel */
