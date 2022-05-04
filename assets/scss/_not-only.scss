@@ -1,0 +1,96 @@
+.not-only {
+  padding: 180px 0px 0px 0px;
+  background-color: #211f20;
+  background: url(../../assets/images/not-only/texture.png),
+    radial-gradient(75% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    max-width: 460px;
+    margin-top: 163px;
+    padding: 0px 15px 0px 0px;
+    box-sizing: content-box;
+    a {
+      align-self: start;
+    }
+    p {
+      color: $color-dark-s;
+    }
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.btn {
+  &_primary {
+  }
+}
+
+/* ========================================================================= */
+//_Media
+
+@media (max-width: 1279.98px) {
+  .not-only {
+    padding: 150px 0px 0px 0px;
+    &__body {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__content {
+      margin: 0px 0px 100px 0px;
+      padding: 0;
+      max-width: 460px;
+      a {
+        align-self: center;
+      }
+    }
+    &__image {
+      align-self: end;
+      img {
+        max-width: 569px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .not-only {
+    padding: 148px 0px 0px 0px;
+    &__image {
+      img {
+        max-width: 460px;
+      }
+    }
+    &__content {
+      margin: 0px 0px 105px 0px;
+      text-align: center;
+      h2 {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+      }
+    }
+  }
+}
+
+@media (max-width: 499.98px) {
+  .not-only {
+    &__image {
+      img {
+        max-width: 260px;
+      }
+    }
+  }
+}

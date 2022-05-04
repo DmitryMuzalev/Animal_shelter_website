@@ -1,0 +1,133 @@
+.footer {
+  padding-top: 40px;
+  background: url(../../assets/images/footer/bg_footer.png) no-repeat center;
+  background-size: cover;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+  }
+
+  &__image {
+  }
+}
+
+.footer-content {
+  display: flex;
+  min-width: 742px;
+  padding-top: 16px;
+  justify-content: space-between;
+  /*  align-items: center;*/
+  &__block {
+    display: flex;
+    max-width: 304px;
+    flex-direction: column;
+
+    &_1 {
+      max-width: 279px;
+      .footer-content__link {
+        min-height: 41px;
+      }
+    }
+  }
+
+  &__title {
+    color: $color-light-xl;
+    margin: 0px 0px 34px 0px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    line-height: 1.15;
+    color: $color-primary;
+    &:not(:last-child) {
+      margin: 0px 0px 32px 0px;
+    }
+    img {
+      margin: 0px 20px 0px 0px;
+    }
+  }
+}
+
+//Media
+@media (max-width: 1279.98px) {
+  .footer {
+    padding-top: 30px;
+    &__body {
+      justify-content: flex-start;
+      gap: 60px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .footer-content {
+    min-width: 640px;
+    padding-top: 0px;
+    &__block {
+      &_2 {
+        transform: translateX(2px);
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    &__body {
+      gap: 40px;
+    }
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    min-width: 300px;
+    &__block {
+      text-align: center;
+      align-items: center;
+      gap: 43px;
+      &_1 {
+        .footer-content__link {
+          min-height: auto;
+        }
+      }
+      &_2 {
+        gap: 40px;
+        transform: translateX(0px);
+        .footer-content__link {
+          transform: translateX(-2px);
+          text-align: left;
+          align-self: flex-start;
+        }
+      }
+    }
+    &__title {
+      width: 270px;
+      margin: 0;
+    }
+    &__link {
+      &:not(:last-child) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 379.98px) {
+  .footer {
+    &__image {
+      img {
+        width: 260px;
+        height: 269px;
+      }
+    }
+  }
+}

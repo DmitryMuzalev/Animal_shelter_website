@@ -1,0 +1,201 @@
+.our-friends {
+  padding: 80px 0 100px 0;
+  background-color: $color-light-l;
+
+  &__body {
+    text-align: center;
+    h3 {
+      text-align: center;
+      margin: 0px 0px 40px 0px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    margin: 0px 0px 40px 0px;
+  }
+
+  &__btn {
+  }
+}
+.slider {
+  padding: 20px;
+  margin: 0px auto;
+  max-width: 990px;
+  box-sizing: content-box;
+  &__body {
+  }
+
+  &__slide {
+  }
+}
+
+.slide {
+  max-width: 270px;
+  height: 435px;
+  border-radius: 9px;
+  background-color: $color-light-s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 0px 0px 30px 0px;
+  transition: all 0.5s;
+
+  &__image {
+    width: 270px;
+    height: 270px;
+    background: no-repeat center;
+    background-size: cover;
+    &_1 {
+      background-image: url(../../assets/images/our-friends/katrine.png);
+    }
+    &_2 {
+      background-image: url(../../assets/images/our-friends/jennifer.png);
+    }
+    &_3 {
+      background-image: url(../../assets/images/our-friends/woody.png);
+    }
+    &_4 {
+      background-image: url(../../assets/images/our-friends/sophia.png);
+    }
+    &_5 {
+      background-image: url(../../assets/images/our-friends/timmy.png);
+    }
+    &_6 {
+      background-image: url(../../assets/images/our-friends/charly.png);
+    }
+    &_7 {
+      background-image: url(../../assets/images/our-friends/scarlett.png);
+    }
+    &_8 {
+      background-image: url(../../assets/images/our-friends/freddie.png);
+    }
+  }
+
+  &__title {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $color-light-xl;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    .slide__btn {
+      background-color: $color-primary;
+    }
+  }
+}
+
+.slider-btn {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-5px);
+  cursor: pointer;
+  transition: all 0.5s;
+  &_prev {
+    left: 0;
+  }
+  &_next {
+    right: 0;
+  }
+  &:hover {
+    background-color: $color-primary;
+  }
+  &:disabled {
+    background-color: black;
+  }
+
+  &.swiper-button-prev.swiper-button-disabled,
+  &.swiper-button-next.swiper-button-disabled {
+    border-color: $color-dark-s;
+    background-color: transparent;
+  }
+
+  &.swiper-button-prev.swiper-button-disabled {
+    .icon-arrow-prev:before {
+      color: $color-dark-s;
+    }
+  }
+  &.swiper-button-next.swiper-button-disabled {
+    .icon-arrow-next:before {
+      color: $color-dark-s;
+    }
+  }
+}
+
+.icon-arrow-next:before,
+.icon-arrow-prev:before {
+  color: $color-dark-3xl;
+}
+
+//Media
+
+@media (max-width: 1279.98px) {
+  .our-friends {
+    &__body {
+      h3 {
+        margin: 0px 0px 38px 0px;
+      }
+    }
+  }
+  .slider {
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 580px;
+    box-sizing: content-box;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .our-friends {
+    padding: 42px 0;
+  }
+  .slider {
+    padding: 15px;
+    max-width: 270px;
+  }
+}
+
+@media (max-width: 430px) {
+  .our-friends {
+    &__slider {
+      position: relative;
+      margin: 0px 0px 45px 0px;
+    }
+    &__body {
+      h3 {
+        margin: 0px 0px 25px 0px;
+      }
+    }
+  }
+  .slide {
+  }
+  .slider-btn {
+    position: relative;
+    transform: translateY(5px);
+    display: inline-block;
+    &_prev {
+      margin: 0px 40px 0px 0px;
+    }
+    &_next {
+      margin: 0px 0px 0px 40px;
+    }
+  }
+  .icon-arrow-next:before,
+  .icon-arrow-prev:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
