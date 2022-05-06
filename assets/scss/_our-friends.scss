@@ -11,14 +11,99 @@
   }
 
   &__slider {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0px 0px 40px 0px;
   }
 
   &__btn {
   }
 }
+.slider-wrapper {
+  width: 990px;
+  overflow: hidden;
+}
 .slider {
+  display: flex;
+  gap: 90px;
+  position: relative;
+  left: -1080px;
+}
+.slide {
+  display: flex;
+  gap: 90px;
+
+  &_left {
+  }
+
+  &_center {
+  }
+
+  &_right {
+  }
+}
+.card {
+  width: 270px;
+  height: 435px;
+  border: 2px solid black;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.slider-btn {
+  cursor: pointer;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid $color-primary;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $color-primary;
+  }
+  &_prev {
+  }
+  &_next {
+  }
+}
+
+@keyframes move-prev {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.transition-prev {
+  animation-name: move-prev;
+  animation-duration: 2s;
+}
+
+@keyframes move-next {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: -2160px;
+  }
+}
+
+.transition-next {
+  animation-name: move-next;
+  animation-duration: 2s;
+}
+
+/* Old code */
+/*.slider {
   padding: 20px;
   margin: 0px auto;
   max-width: 990px;
@@ -198,4 +283,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+}*/

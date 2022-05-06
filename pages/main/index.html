@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SWIPER style -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <!-- / -->
     <link rel="stylesheet" href="../../assets/fonts/iconfont.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Shelter</title>
@@ -122,7 +115,37 @@
             Our friends who <br />
             are looking for a house
           </h3>
+          <!-- Slider -->
           <div class="our-friends__slider">
+            <button class="slider-btn slider-btn_prev">
+              <span class="icon-arrow-prev"></span>
+            </button>
+            <div class="slider-wrapper">
+              <div class="slider">
+                <div class="slide slide_left">
+                  <div class="card">1</div>
+                  <div class="card">1</div>
+                  <div class="card">1</div>
+                </div>
+                <div class="slide slide_center">
+                  <div class="card">2</div>
+                  <div class="card">2</div>
+                  <div class="card">2</div>
+                </div>
+                <div class="slide slide_right">
+                  <div class="card">3</div>
+                  <div class="card">3</div>
+                  <div class="card">3</div>
+                </div>
+              </div>
+            </div>
+            <button class="slider-btn slider-btn_next">
+              <span class="icon-arrow-next"></span>
+            </button>
+          </div>
+
+          <!-- Old code -->
+          <!--          <div class="our-friends__slider">
             <div class="swiper slider">
               <div class="swiper-wrapper slider__body">
                 <div class="swiper-slide slider__slide slide">
@@ -168,8 +191,7 @@
               </div>
             </div>
 
-
-            <!-- Arrows -->
+  
             <a
               href="#"
               class="slider-btn slider-btn_prev swiper-button-prev"
@@ -182,10 +204,8 @@
               aria-label="Next slide"
               ><span class="icon-arrow-next"></span
             ></a>
-            <!-- / -->
 
-            
-          </div>
+          </div>-->
 
           <a href="../pets/pets.html" class="our-friends__btn btn btn_primary"
             >Get to know the rest</a
@@ -379,10 +399,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- SWIPER -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- / -->
 
     <script src="script.js"></script>
   </body>

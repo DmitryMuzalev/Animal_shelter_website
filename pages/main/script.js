@@ -1,4 +1,4 @@
-/* Menu */
+/* Menu burger*/
 const $burger = document.querySelector(".menu__icon");
 const $menu = document.querySelector(".menu__body");
 const $header = document.querySelector(".header");
@@ -33,9 +33,42 @@ $links.forEach((e) => {
 });
 
 $curtain.addEventListener("click", hideMenu);
+/* ====================================================================== */
 
+/* Slider */
+const $slider = document.querySelector(".slider");
+const $sliderBtnPrev = document.querySelector(".slider-btn_prev");
+const $sliderBtnNext = document.querySelector(".slider-btn_next");
+
+const movePrev = () => {
+  $slider.classList.add("transition-prev");
+  $sliderBtnPrev.removeEventListener("click", movePrev);
+  $sliderBtnNext.removeEventListener("click", moveNext);
+};
+
+const moveNext = () => {
+  $slider.classList.add("transition-next");
+  $sliderBtnPrev.removeEventListener("click", movePrev);
+  $sliderBtnNext.removeEventListener("click", moveNext);
+};
+
+$sliderBtnPrev.addEventListener("click", movePrev);
+$sliderBtnNext.addEventListener("click", moveNext);
+
+$slider.addEventListener("animationend", (animation) => {
+  if (animation.animationName === "move-prev") {
+    $slider.classList.remove("transition-prev");
+  } else {
+    $slider.classList.remove("transition-next");
+  }
+
+  $sliderBtnPrev.addEventListener("click", movePrev);
+  $sliderBtnNext.addEventListener("click", moveNext);
+});
+
+/* Old code */
 /* SWIPER */
-const swiper = new Swiper(".slider", {
+/*const swiper = new Swiper(".slider", {
   loop: true,
 
   navigation: {
@@ -57,4 +90,4 @@ const swiper = new Swiper(".slider", {
       spaceBetween: 90,
     },
   },
-});
+});*/
