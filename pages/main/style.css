@@ -504,7 +504,8 @@ h5 {
   margin: 0px 0px 40px 0px;
 }
 .slider-wrapper {
-  width: 990px;
+  padding: 35px;
+  width: 1060px;
   overflow: hidden;
 }
 
@@ -522,12 +523,35 @@ h5 {
 .card {
   width: 270px;
   height: 435px;
-  border: 2px solid black;
   border-radius: 9px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.card__image {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  display: flex;
   justify-content: center;
-  font-size: 45px;
+}
+.card__title {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+.card:hover .card__btn {
+  background-color: #f1cdb3;
 }
 
 .slider-btn {
