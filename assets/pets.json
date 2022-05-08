@@ -22,17 +22,6 @@
      "parasites": ["none"]
    },
    {
-    "name": "Bolto",
-    "img": "../../assets/images/bolto.png",
-    "type": "Dog",
-    "breed": "Shih tzu",
-    "description": "Bolto here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
-    "age": "2 month",
-    "inoculations": ["parvovirus"],
-    "diseases": ["none"],
-    "parasites": ["none"]
-  },
-   {
      "name": "Woody",
      "img": "../../assets/images/woody.png",
      "type": "Dog",
@@ -97,5 +86,71 @@
      "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
      "diseases": ["deafness", "blindness"],
      "parasites": ["lice", "fleas"]
-   }
+   },
+   {
+    "name": "Ryzhik",
+    "img": "../../assets/images/ryzhik.png",
+    "type": "Dog",
+    "breed": "Сur",
+    "description": "Puppy half-breed Ryzhik. The puppy is homely, contact, loves to be stroked and insists on being given more attention. Ryzhik is a ladies' man, he loves women's society and, in general, is close to people. He has undergone mild training for training and life in the city: he knows the simplest commands, walks in the city on a leash, and does almost all his work on the street.",
+    "age": "7 month",
+    "inoculations": ["parvovirus"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
+    "name": "Troy",
+    "img": "../../assets/images/troy.png",
+    "type": "Dog",
+    "breed": "Сur",
+    "description": "Troy is a blind young dog. And it seems that he does not feel special, because he has long been accustomed to and lives by smells, hearing and feelings. And he has more than enough feelings) He is a gentle, playful, hugging friend. He wants one thing - only that someone is near! He was tired of being alone in the dark. He is very contact and affectionate, loves when his tummy is scratched and dreams of a family! Troy is now living in foster care and is already dreaming of leaving for his permanent home! How much can you wander! Help Troy find a home!",
+    "age": "4 years",
+    "inoculations": ["parvovirus"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
+    "name": "Bun",
+    "img": "../../assets/images/bun.png",
+    "type": "Dog",
+    "breed": "Сur",
+    "description": "Short-legged puppy Bun. Very contact, loves to be stroked on a silk skin, and also kissed and squeezed. She got her nickname because even in the most difficult times, when there was practically nothing to eat, she ate her brothers and thus ate her sides more than theirs. When times started to improve, Bun fell in love with sleeping on the couch, cutting her nails, bathing with shampoo, and, of course, love for sweets did not go anywhere. Leader by nature.",
+    "age": "7 month",
+    "inoculations": ["parvovirus"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
+    "name": "Altai",
+    "img": "../../assets/images/altai.png",
+    "type": "Cat",
+    "breed": "No breed",
+    "description": "Altai came to us with a serious chronic disease. The street is not in vain for cats. Despite everything, Altai is waiting for his family. Large, fluffy, calm and affectionate, with amazing charisma - he conquers immediately! He needs a man who will fall in love, and, of course, will be ready to monitor the health of an extraordinary cat.",
+    "age": "8 years",
+    "inoculations": ["parvovirus"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
+    "name": "Samson",
+    "img": "../../assets/images/samson.png",
+    "type": "Cat",
+    "breed": "No breed",
+    "description": "Samson came to us before the new year, under the OSVV program. And he showed himself immediately in the most extraordinary way. He apparently realized that he did not want to go back to the street, so he must portray something so that he would be noticed and appreciated! And he did it. Affectionate, very sociable, climbs into hands, butts, ready to pose, work as a model if necessary. In general, Samson needs to go home. He is ready to be someone's friend, an eternal positive, a purring antidepressant!",
+    "age": "2 years",
+    "inoculations": ["parvovirus"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
+    "name": "Bars",
+    "img": "../../assets/images/bars.png",
+    "type": "Cat",
+    "breed": "No breed",
+    "description": "Bars came to us at the end of 2021 under the OSVV program. Together with their sister, they were still kittens. My sister was lucky, she was quickly noticed and she went home. And Bars still lives with us. He is a gentle, calm, slightly shy boy. He needs a little time to get used to and trust. Very handsome, with a chic fur coat and amber eyes.The guy was born around April 2021, healthy, vaccinated, neutered, tests for infections are negative, communicates well with other cats, not a bully, loves to play.",
+    "age": "1 year",
+    "inoculations": ["parvovirus"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  }
  ]
